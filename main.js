@@ -53,3 +53,21 @@ function atualizarListagem() {
     corpoProdutos.appendChild(tr);
   });
 }
+
+document
+  .getElementById("formularioProduto")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const novoProduto = {
+      nome: document.getElementById("nomeProduto").value,
+      descricao: document.getElementById("descricaoProduto").value,
+      valor: parseFloat(document.getElementById("valorProduto").value),
+      disponivel: document.getElementById("disponivelVenda").value,
+    };
+
+    produtos.push(novoProduto);
+    this.reset();
+    mostrarListagem();
+  });
+mostrarListagem();
