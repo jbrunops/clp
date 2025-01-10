@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+:root {
+  --cor-primaria: #6c63ff;
+  --cor-secundaria: #4caf50;
+  --cor-perigo: #ff4757;
+  --cor-fundo: #f8f9fa;
+  --cor-texto: #2d3436;
+  --espaco-padrao: 1.5rem;
+  --borda-raio: 8px;
+  --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  min-height: 100vh;
+  padding: var(--espaco-padrao);
+  line-height: 1.6;
+}
